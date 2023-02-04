@@ -19,7 +19,7 @@ const port = 3000;
 const { middlewareGlobal } = require('./src/middlewares/middleware');
 const { novoMiddlewareGlobal } = require('./src/middlewares/middleware');
 
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.resolve(__dirname, 'public')));
 
 // Caminhos dos viwes
